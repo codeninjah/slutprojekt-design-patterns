@@ -47,6 +47,7 @@ describe("Test MeetupsView", () => {
     const wrapper = mount(<MeetupsView />)
     const item = wrapper.find('[data-test="meetup-item"]')
     const eventDate = wrapper.find('.date')
+    console.log("Event date is: " + eventDate)
     const todaysDate = new Date().getTime()
   })
 });

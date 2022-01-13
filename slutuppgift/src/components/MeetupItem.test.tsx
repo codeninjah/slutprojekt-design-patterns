@@ -3,7 +3,6 @@ import { render, screen } from '@testing-library/react';
 import { shallow, mount } from 'enzyme';
 import MeetupItem from './MeetupItem';
 import MeetupsView from './MeetupsView';
-import App from '../App';
 
 
 describe("Should ", () => {
