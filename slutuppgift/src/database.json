@@ -3,35 +3,35 @@
         {
             "id": "12345",
             "name": "AWS",
-            "date": "2021-12-10T13:33:03.969Z",
+            "date": "2021-12-10",
             "description": "Amazon Web Services. The popular Cloud service has experienced massive growth during past years.",
             "comments": []
         },
         {
             "id": "123456",
             "name": "Code along with David",
-            "date": "2022-01-20T16:33:03.969Z",
+            "date": "2022-01-20",
             "description": "David will have a live session of TDD development. You can get insisght, pick up a thing or two and get the help you may need.",
             "comments": []
         },
         {
             "id": "1234567",
             "name": "Coder's meetup",
-            "date": "2021-12-26T20:33:03.969Z",
+            "date": "2021-12-26",
             "description": "Coder's hangout - we talk code, we breath code, we dream code. This is a meetup for all of us. We are celebrating 10 years this year. Join us!",
             "comments": []
         },
         {
             "id": "12345678",
             "name": "NASA's spaceshuttle launch",
-            "date": "2022-01-05T13:00:00.969Z",
+            "date": "2022-01-05",
             "description": "NASA's next scheduled spaceshuttle launch will take place on the fifth day of the new year. ",
             "comments": []
         },
         {
             "id": "123456789",
             "name": "Elon's next big announcement",
-            "date": "2020-12-26T19:30:00.969Z",
+            "date": "2020-12-26",
             "description": "Elon Musk has something big for us in store. After Tesla, SpaceX and Hyperloop, he's going to revolutionise the stock- and banking- markets. What's next?",
             "comments": []
         },
@@ -72,4 +72,5 @@
         }
     ]
 }
+
 

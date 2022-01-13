@@ -42,5 +42,11 @@ describe("Test MeetupsView", () => {
     input.simulate('change', {target: {value: "2020"} })
     const nrofmeetups = wrapper.find('h1').length
     expect(nrofmeetups).toEqual(1)
+  }),
+  it("shows if date is passed or not yet", () => {
+    const wrapper = mount(<MeetupsView />)
+    const item = wrapper.find('[data-test="meetup-item"]')
+    const eventDate = wrapper.find('.date')
+    const todaysDate = new Date().getTime()
   })
 });

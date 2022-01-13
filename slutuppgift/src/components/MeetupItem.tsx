@@ -1,5 +1,4 @@
-import { render } from 'enzyme'
-import { IMeetup } from '../models/Meetup'
+//import { IMeetup } from '../models/Meetup'
 import { useState } from 'react'
 
 type props = { 
@@ -52,8 +51,5 @@ const MeetupItem = ({id, name, date, description, comments, addComment}:props) =
             </>
         );
 }
-
-
-
 
 export default MeetupItem
