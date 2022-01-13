@@ -1,0 +1,149 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sorted-meetups-list {
+  /*display: flex;
+  flex-direction: row;
+  justify-content: space-around;*/
+  /*justify-content: space-between;
+  flex-wrap: wrap; */
+  max-width: 600px;
+  padding: 50px;
+  margin: auto;
+}
+
+.sorted-meetups-list-item {
+  max-width: 250px;
+  padding: 10px;
+}
+
+.meetups-list {
+  margin: auto;
+  text-align: center;
+  width: 50%;
+}
+
+.sorted-meetups-list  {
+  list-style-type: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+.inputContainer {
+  margin-top: 25px;
+  text-align: right;
+  margin-top: 20px;
+  margin-right: 650px;
+}
+
+article {
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.kommentarer {
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+.kommentar {
+  font-size: 14px;
+  font-family: Arial;
+  text-align: right;
+  margin-right: 20px;
+}
+
+/*These will later be used to mark upcoming, ongoing and passed events */
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.member-comment {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.attend-btn {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.event-details {
+  font-style: italic;
+  padding: 20px;
+}
+
+img {
+  width: 400px;
+  height: auto;
+}
+
+.header-image {
+  width: 600px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.header-text {
+  width: 600px;
+  height: auto;
+  margin: auto;
+  font-style: italic;
+  font-size: 24px;
+}
+
+.description {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.description {
+  font-weight: 600;
+}
