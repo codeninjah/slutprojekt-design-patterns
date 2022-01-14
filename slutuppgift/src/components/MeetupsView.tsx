@@ -21,27 +21,6 @@ export const MeetupsView = () => {
         setMeetups(newMeetupsList)
     }
     
-    //Denna funktion skall jämföra dagens datum med datumen för meetups'en
-    //Borde skriva tester innan jag fortsätter bygga ut den
-    const dateCompare = (eventDate: any) => {
-        const todaysDate = new Date().getTime()
-        const processedTodaysDate = Number(todaysDate)
-        console.log("processed is: " + processedTodaysDate) //works ==> prints a timestamp
-
-        const testDate = (new Date(eventDate)).getTime()
-        const processedTestDate = Number(testDate)
-        console.log("testDate is: " + processedTestDate) //works ==> prints a timestamp
-
-        if(todaysDate > testDate){
-            console.log("Event already passed")
-        }
-        if(todaysDate < testDate){
-            console.log("Event drar igång snart")
-        }
-
-    }
-
-    dateCompare("2022-10-10")
 
     return (
         <>

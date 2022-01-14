@@ -22,6 +22,32 @@ const MeetupItem = ({id, name, date, description, comments, addComment}:props) =
         setShowCommentary(true)
         setShowDetails(true)
     }
+
+    const dateCompare = (eventDate: any) => {
+        let hasPassed = true
+        const todaysDate = new Date().getTime()
+        const processedTodaysDate = Number(todaysDate)
+        console.log("processed is: " + processedTodaysDate) //works ==> prints a timestamp
+
+        const dateofEvent = (new Date(eventDate)).getTime()
+        console.log("dateofEvent is: " + dateofEvent)
+        const processedEventDate = Number(dateofEvent)
+        console.log("testDate is: " + processedEventDate) //works ==> prints a timestamp
+
+        if(processedTodaysDate > processedEventDate){
+            hasPassed = false;
+        }
+        if(todaysDate < processedEventDate){
+            hasPassed = true
+        }
+
+        return hasPassed
+
+    }
+
+    /*dateCompare({date})
+    console.log(dateCompare({date}))
+    console.log("Date is: " + date)*/
             
         return(
             <>
@@ -35,14 +61,14 @@ const MeetupItem = ({id, name, date, description, comments, addComment}:props) =
                 <p className="date">DATE: {date}</p>
                 <p className="description">{description}</p>
                 <div>
-                    <p>Comments:</p>
+                     { dateCompare(date) ? <p>Comments</p> : <p className="meetup-ended">Meetup already ended</p> }
 
                     <ul>
                         {                     
                             comments.map(comment => <li data-test="comment-item">{comment}</li>) 
                         }
                     </ul> 
-                    { showButton ? <div className="attend-btn"><button onClick={attendBtnStuff} data-test="attend-btn">Attend</button></div> : <></> }
+                    { showButton && dateCompare(date) ? <div className="attend-btn"><button onClick={attendBtnStuff} data-test="attend-btn">Attend</button></div> : <></> }
 
                             { showCommentary ? <div className="member-comment"><button data-test="meetups-comment-btn" onClick={() => addComment(id, inputComment)}>Comment</button>
                             <input type="text" data-test="meetups-comment-field" placeholder="Leave a comments" value={inputComment} onChange={(ev: React.ChangeEvent<HTMLInputElement>,) => setInputComment(ev.target.value)}></input></div> : <></> }

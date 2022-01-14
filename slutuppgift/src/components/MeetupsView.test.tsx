@@ -50,12 +50,4 @@ describe("Test MeetupsView", () => {
     const lastEvent = wrapper.find('[data-test="meetup-item"]').at(9)
     expect(lastEvent.text().includes("2020")).toBe(true)
   });
-  it("shows if date is passed or not yet", () => {
-    const wrapper = mount(<MeetupsView />)
-    const item = wrapper.find('[data-test="meetup-item"]').at(1)
-    const futureEventWrapper = wrapper.find('.date').at(1)
-    expect(futureEventWrapper.text().includes("2022-03-26")).toBe(true)
-    const todaysDate = new Date("YYYY-MM-DD")
-    expect(futureEventWrapper).toEqual(!todaysDate)
-  })
 });

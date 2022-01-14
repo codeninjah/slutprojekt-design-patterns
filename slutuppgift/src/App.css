@@ -147,3 +147,9 @@ img {
 .description {
   font-weight: 600;
 }
+
+.meetup-ended {
+  color: red;
+  font-weight: 700;
+  font-size: 22px;
+}
