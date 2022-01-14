@@ -27,14 +27,14 @@ describe("Test MeetupsView", () => {
     const input = wrapper.find('[data-test="meetups-input"]').at(0)
     input.simulate('change', {target: {value: "2021"} })
     const nrofmeetups = wrapper.find('h1').length
-    expect(nrofmeetups).toEqual(6)
+    expect(nrofmeetups).toEqual(5)
   }),
   it("shows all meetups that happened druing 2022", () => {
     const wrapper = mount(<MeetupsView />)
     const input = wrapper.find('[data-test="meetups-input"]').at(0)
     input.simulate('change', {target: {value: "2022"} })
     const nrofmeetups = wrapper.find('h1').length
-    expect(nrofmeetups).toEqual(3)
+    expect(nrofmeetups).toEqual(4)
   }),
   it("shows all meetups that happen during 2020", () => {
     const wrapper = mount(<MeetupsView />)
@@ -52,9 +52,10 @@ describe("Test MeetupsView", () => {
   });
   it("shows if date is passed or not yet", () => {
     const wrapper = mount(<MeetupsView />)
-    const item = wrapper.find('[data-test="meetup-item"]')
-    const eventDate = wrapper.find('.date')
-    console.log("Event date is: " + eventDate)
-    const todaysDate = new Date().getTime()
+    const item = wrapper.find('[data-test="meetup-item"]').at(1)
+    const futureEventWrapper = wrapper.find('.date').at(1)
+    expect(futureEventWrapper.text().includes("2022-03-26")).toBe(true)
+    const todaysDate = new Date("YYYY-MM-DD")
+    expect(futureEventWrapper).toEqual(!todaysDate)
   })
 });
