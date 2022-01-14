@@ -43,6 +43,13 @@ describe("Test MeetupsView", () => {
     const nrofmeetups = wrapper.find('h1').length
     expect(nrofmeetups).toEqual(1)
   }),
+  it("shows meetups are sorted, first should contain year 2022, last should contain year 2020", () => {
+    const wrapper = mount(<MeetupsView/>)
+    const firstEvent = wrapper.find('[data-test="meetup-item"]').at(0)
+    expect(firstEvent.text().includes('2022')).toBe(true)
+    const lastEvent = wrapper.find('[data-test="meetup-item"]').at(9)
+    expect(lastEvent.text().includes("2020")).toBe(true)
+  });
   it("shows if date is passed or not yet", () => {
     const wrapper = mount(<MeetupsView />)
     const item = wrapper.find('[data-test="meetup-item"]')
