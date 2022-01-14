@@ -12,6 +12,6 @@ describe("Should ", () => {
         registerBtn.simulate('click')
         const commentsBtn = wrapper.find('[data-test="meetups-comment-btn"]')
         expect(commentsBtn.exists()).toBe(true)
-      });
+      })
 });
 
