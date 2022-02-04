@@ -14,7 +14,7 @@ const MeetupItem = ({id, name, date, description, comments, addComment}:props) =
     let [showButton, setShowButton]  = useState(true);
     let [showCommentary, setShowCommentary] = useState(false)
     let [showDetails, setShowDetails] = useState(false)
-    let [showComments, setShowComments] = useState(comments)
+    //let setShowComments = useState(comments)
     let [inputComment, setInputComment] = useState('')
 
     const attendBtnStuff = () => {
@@ -26,13 +26,10 @@ const MeetupItem = ({id, name, date, description, comments, addComment}:props) =
     const dateCompare = (eventDate: any) => {
         let hasPassed = true
         const todaysDate = new Date().getTime()
-        const processedTodaysDate = Number(todaysDate)
-        console.log("processed is: " + processedTodaysDate) //works ==> prints a timestamp
+        const processedTodaysDate = Number(todaysDate) //works ==> prints a timestamp
 
         const dateofEvent = (new Date(eventDate)).getTime()
-        console.log("dateofEvent is: " + dateofEvent)
-        const processedEventDate = Number(dateofEvent)
-        console.log("testDate is: " + processedEventDate) //works ==> prints a timestamp
+        const processedEventDate = Number(dateofEvent) //works ==> prints a timestamp
 
         if(processedTodaysDate > processedEventDate){
             hasPassed = false;
@@ -44,17 +41,13 @@ const MeetupItem = ({id, name, date, description, comments, addComment}:props) =
         return hasPassed
 
     }
-
-    /*dateCompare({date})
-    console.log(dateCompare({date}))
-    console.log("Date is: " + date)*/
             
         return(
             <>
                 <h1>{name}</h1>
                 
                 { showDetails ? <div><h3 className="registration-confirmed">Welcome to our event!</h3> 
-                    <p><img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Golden_star.svg"></img></p>
+                    <p><img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Golden_star.svg" alt="Taken rom Wikipedia"></img></p>
                 <p className="event-details">We hope you enjoy it, we cannot wait for you to experience it and please do not forget to leave a comment or two</p></div>
                 : <></>}
 

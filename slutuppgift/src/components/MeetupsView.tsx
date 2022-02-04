@@ -1,7 +1,5 @@
-import { Key, ReactChild, ReactFragment, ReactPortal } from 'react';
-import React, {useState, useEffect} from 'react';
-import  MeetupItem  from './MeetupItem';
-import { Props } from '../models/Meetup';
+import React, {useState} from 'react';
+import MeetupItem from './MeetupItem';
 /* tslint:disable-next-line */
 import { Meetups } from '../database.json'; 
 
@@ -17,11 +15,9 @@ export const MeetupsView = () => {
             if(item.id === id) item.comments.push(comment) /* eslint-disable */
             return item
         })
-
         setMeetups(newMeetupsList)
     }
     
-
     return (
         <>
         <div>
