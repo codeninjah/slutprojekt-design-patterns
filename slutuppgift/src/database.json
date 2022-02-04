@@ -1,74 +1,72 @@
-{
-  "Meetups": [
-    {
-      "id": "12345",
-      "name": "AWS",
-      "date": "2021-12-10",
-      "description": "Amazon Web Services. The popular Cloud service has experienced massive growth during past years.",
-      "comments": []
-    },
-    {
-      "id": "123456",
-      "name": "Code along with David",
-      "date": "2022-01-20",
-      "description": "David will have a live session of TDD development. You can get insisght, pick up a thing or two and get the help you may need.",
-      "comments": []
-    },
-    {
-      "id": "1234567",
-      "name": "Coder's meetup",
-      "date": "2021-12-26",
-      "description": "Coder's hangout - we talk code, we breath code, we dream code. This is a meetup for all of us. We are celebrating 10 years this year. Join us!",
-      "comments": []
-    },
-    {
-      "id": "12345678",
-      "name": "NASA's spaceshuttle launch",
-      "date": "2022-01-05",
-      "description": "NASA's next scheduled spaceshuttle launch will take place on the fifth day of the new year. ",
-      "comments": []
-    },
-    {
-      "id": "123456789",
-      "name": "Elon's next big announcement",
-      "date": "2020-12-26",
-      "description": "Elon Musk has something big for us in store. After Tesla, SpaceX and Hyperloop, he's going to revolutionise the stock- and banking- markets. What's next?",
-      "comments": []
-    },
-    {
-      "id": "1234567890",
-      "name": "Microsoft's Visual Studio 2022 launch",
-      "date": "2021-12-26",
-      "description": "It's time for the next version of Visual Studio, join us to find out the most exciting additions and changes with .NET 6.0!",
-      "comments": []
-    },
-    {
-      "id": "0123456",
-      "name": "SpaceX",
-      "date": "2021-02-26",
-      "description": "SpaceX is already a success, with people sent into space. This meetup will feature a lecture about how the program plans to build bases on the Moon and on March.",
-      "comments": []
-    },
-    {
-      "id": "01234567",
-      "name": "How to become an entrepreneur",
-      "date": "2021-12-10",
-      "description": "All you need to know for gaining a healthy entreprenour- mindset and become succesfull running your own company.",
-      "comments": []
-    },
-    {
-      "id": "012345678",
-      "name": "TED talks: Our Green Planet",
-      "date": "2022-12-26",
-      "description": "The future has arrived. We only have a limited time to turn things around. TED talks: Our Green Planet will focus on the good news and latest inoovations for sustainbility and climate change",
-      "comments": []
-    },
-    {
-      "id": "0123456789",
-      "name": "CryptoTalks",
-      "date": "2022-03-26",
-      "description": "Bitcoin or Dogecoin? How does Crypto Currency work? What's Bitcoin mining? Why can a Bitcoin cost $10,000 sometimes and plunge to $3,000? Which currency is the next Bitcoin? How does it change banking and finance?",
-      "comments": []
-    }
-  ]
-}
+[
+  {
+    "id": "12345",
+    "name": "AWS",
+    "date": "2021-12-10",
+    "description": "Amazon Web Services. The popular Cloud service has experienced massive growth during past years.",
+    "comments": []
+  },
+  {
+    "id": "123456",
+    "name": "Code along with David",
+    "date": "2022-01-20",
+    "description": "David will have a live session of TDD development. You can get insisght, pick up a thing or two and get the help you may need.",
+    "comments": []
+  },
+  {
+    "id": "1234567",
+    "name": "Coder's meetup",
+    "date": "2021-12-26",
+    "description": "Coder's hangout - we talk code, we breath code, we dream code. This is a meetup for all of us. We are celebrating 10 years this year. Join us!",
+    "comments": []
+  },
+  {
+    "id": "12345678",
+    "name": "NASA's spaceshuttle launch",
+    "date": "2022-01-05",
+    "description": "NASA's next scheduled spaceshuttle launch will take place on the fifth day of the new year. ",
+    "comments": []
+  },
+  {
+    "id": "123456789",
+    "name": "Elon's next big announcement",
+    "date": "2020-12-26",
+    "description": "Elon Musk has something big for us in store. After Tesla, SpaceX and Hyperloop, he's going to revolutionise the stock- and banking- markets. What's next?",
+    "comments": []
+  },
+  {
+    "id": "1234567890",
+    "name": "Microsoft's Visual Studio 2022 launch",
+    "date": "2021-12-26",
+    "description": "It's time for the next version of Visual Studio, join us to find out the most exciting additions and changes with .NET 6.0!",
+    "comments": []
+  },
+  {
+    "id": "0123456",
+    "name": "SpaceX",
+    "date": "2021-02-26",
+    "description": "SpaceX is already a success, with people sent into space. This meetup will feature a lecture about how the program plans to build bases on the Moon and on March.",
+    "comments": []
+  },
+  {
+    "id": "01234567",
+    "name": "How to become an entrepreneur",
+    "date": "2021-12-10",
+    "description": "All you need to know for gaining a healthy entreprenour- mindset and become succesfull running your own company.",
+    "comments": []
+  },
+  {
+    "id": "012345678",
+    "name": "TED talks: Our Green Planet",
+    "date": "2022-12-26",
+    "description": "The future has arrived. We only have a limited time to turn things around. TED talks: Our Green Planet will focus on the good news and latest inoovations for sustainbility and climate change",
+    "comments": []
+  },
+  {
+    "id": "0123456789",
+    "name": "CryptoTalks",
+    "date": "2022-03-26",
+    "description": "Bitcoin or Dogecoin? How does Crypto Currency work? What's Bitcoin mining? Why can a Bitcoin cost $10,000 sometimes and plunge to $3,000? Which currency is the next Bitcoin? How does it change banking and finance?",
+    "comments": []
+  }
+]

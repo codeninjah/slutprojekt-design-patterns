@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import MeetupItem from './MeetupItem';
 /* tslint:disable-next-line */
-import { Meetups } from '../database.json'; 
+import Meetups from '../database.json'; 
 
 export const MeetupsView = () => {
     const parsedmeetupsList = JSON.parse(JSON.stringify(Meetups))
