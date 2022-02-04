@@ -43,5 +43,5 @@ describe("Test MeetupsView", () => {
     expect(firstEvent.text().includes('2022')).toBe(true)
     const lastEvent = wrapper.find('[data-test="meetup-item"]').at(9)
     expect(lastEvent.text().includes("2020")).toBe(true)
-  })
+  }) //
 });

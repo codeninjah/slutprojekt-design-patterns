@@ -18,5 +18,5 @@ describe("Testar med enzyme", () => {
     commentsBtn.simulate('click')
     const comment = wrapper.find('[data-test="comment-item"]')
     expect(comment.exists()).toBe(true)
-  })
+  }) //
 });
