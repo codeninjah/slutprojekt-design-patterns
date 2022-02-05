@@ -58,7 +58,7 @@ const MeetupItem = ({id, name, date, description, comments, addComment}:props) =
 
                     <ul>
                         {                     
-                            comments.map(comment => <li data-test="comment-item">{comment}</li>) 
+                            comments.map(comment => <li data-test="comment-item" key={comment}>{comment}</li>) 
                         }
                     </ul> 
                     { showButton && dateCompare(date) ? <div className="attend-btn"><button onClick={attendBtnStuff} data-test="attend-btn">Attend</button></div> : <></> }

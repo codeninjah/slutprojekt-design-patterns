@@ -41,8 +41,8 @@ export const MeetupsView = () => {
                 <ol className="sorted-meetups-list">
                 {
                     meetups.filter((item: any) => item.date.includes(inputValue)).map((item: any) => 
-                            <li data-test="meetup-item">
-                                 <article key={item.id}> 
+                            <li data-test="meetup-item" key={item.id}>
+                                 <article> 
                                     <MeetupItem key={item.id} id={item.id} name={item.name} date={item.date} description={item.description} comments={item.comments} addComment={(id, comment) => addComment(id, comment)} /> 
                                 </article>
                             </li>
